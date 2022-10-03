@@ -1,0 +1,254 @@
+
+/* separaaremos toda la pagina en 7 partes con el grid */
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0s;
+    border-radius: 2px;
+
+
+}
+
+
+#nom{
+    margin: 15px;
+}
+
+body{
+    background: rgb(64, 147, 138);
+
+}
+
+
+
+
+
+
+/* Trabajaremos el header */
+header{
+    background: rgb(3,4,40);
+    background: linear-gradient(90deg, rgb(2, 3, 31) 0%, #16378bcc 32%, rgb(194, 59, 129) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: antiquewhite;
+    
+}
+#imgLogo{
+    height: 80px;
+}
+nav{
+    display: inline-block;
+}
+
+.nav{
+    padding: 20px;
+    margin: 25px;
+}
+
+.nav:hover{
+    background:  #02031f;
+    color: rgb(173, 84, 84);
+} 
+
+#logoNombre{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+/* Contenedor principal que esta centrado */
+
+
+#contenedor{
+
+    margin: 150px 250px 0 250px;
+
+    border: solid black 2px;
+    
+
+}
+
+
+/* Titulo */
+#cajaTituloPrin{
+    height: 100px;
+}
+#tituloPrin{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+#seccion1{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    /* Se vuelve a llamar un display grid, esta vez dividiendolo en 3 partes sola una seccion */
+}
+
+#article1{
+    grid-column: 2 ;
+    grid-row: 1;
+    margin: auto;
+}
+#article4{
+    grid-column: 1 ;
+    margin: auto;
+    grid-row: 1;
+}
+#article3{
+    margin: auto;
+    grid-column: 3 ;
+    grid-row: 1;
+}
+/* Se marca donde estara ubicado cada articulo con grid, y se pone algo de estilo a los objetos */
+
+.cosas{
+    padding: 20px;
+}
+
+
+.sub{
+    text-align: center;
+    
+}
+
+.imgArticle{
+    width: 60px;
+    height: 80px;
+    display: flex;
+    margin: 5px auto ;
+}
+
+.textSub{
+    text-align: justify ;
+}
+
+
+
+
+
+
+
+
+
+
+/* Seccion 2 */
+#seccion2{
+    margin: 0 20px;
+    border: 2px solid;
+
+/* Se ubica con el grid del main, y se vuelve a crear otro grid dentro de el esta vez en 2 partes */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+iframe{
+    padding: 40px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 400px;
+}
+
+.article2{
+    padding: 40px;
+
+    text-align: justify;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+
+
+
+/* Se trabaja la secicon 3 */
+#seccion3{
+
+/* Se ubica con el grid del main, y se vuelve a crear otro grid dentro de el esta vez en 5 partes */
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* Se ubica cada articulo en una columna */
+.articulo1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.articulo2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.articulo13{
+    grid-column: 3;
+    grid-row: 1;
+}
+.articulo4{
+    grid-column: 4;
+    grid-row: 1;
+}
+.articulo5{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Se trabaja el footer */
+footer{
+    border: solid;
+    margin: 20px;
+
+}
+
+#desarrollador{
+    text-align: center;
+    margin: 10px;
+}
+
+#blockImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.imgFooter{
+    padding: 5px;
+}
